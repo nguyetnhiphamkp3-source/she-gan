@@ -299,6 +299,7 @@
   #vision,
   #education,
   #founder,
+  #family,
   #awards {
     isolation: isolate;
     position: relative;
@@ -325,6 +326,12 @@
   }
   #founder {
     background: var(--white);
+  }
+  #family {
+    background:
+      radial-gradient(at 88% 18%, rgba(247, 235, 208, 0.22), transparent 56%),
+      linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(250, 243, 231, 0.94)),
+      var(--cream);
   }
   #awards {
     background:
@@ -435,14 +442,16 @@
   #mission,
   #vision,
   #education,
-  #founder {
+  #founder,
+  #family {
     padding: 0;
   }
   #intro > *,
   #mission > *,
   #vision > *,
   #education > *,
-  #founder > * {
+  #founder > *,
+  #family > * {
     max-width: none;
     margin: 0;
   }
@@ -450,7 +459,8 @@
   #mission .ti-split,
   #vision .ti-split,
   #education .ti-split,
-  #founder .ti-split {
+  #founder .ti-split,
+  #family .ti-split {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0;
@@ -465,7 +475,8 @@
   #mission .ti-content,
   #vision .ti-content,
   #education .ti-content,
-  #founder .ti-content {
+  #founder .ti-content,
+  #family .ti-content {
     padding: 96px 80px;
     display: flex;
     flex-direction: column;
@@ -475,7 +486,8 @@
   #mission .ti-image,
   #vision .ti-image,
   #education .ti-image,
-  #founder .ti-image {
+  #founder .ti-image,
+  #family .ti-image {
     aspect-ratio: auto;
     border-radius: 0;
     margin: 0;
@@ -486,7 +498,8 @@
   #mission .ti-content h3,
   #vision .ti-content h3,
   #education .ti-content h3,
-  #founder .ti-content h3 {
+  #founder .ti-content h3,
+  #family .ti-content h3 {
     font-size: clamp(32px, 3vw, 44px);
     line-height: 1.15;
     margin-bottom: 28px;
